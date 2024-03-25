@@ -1,0 +1,38 @@
+/* Fonts */
+/* Fixel Display */
+@font-face {
+  font-family: 'Fixel Display Bold';
+  src: url('../fonts/FixelDisplay/FixelDisplay-Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Fixel Display ExtraBold';
+  src: url('../fonts/FixelDisplay/FixelDisplay-Bold.otf') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Fixel Display SemiBold';
+  src: url('../fonts/FixelDisplay/FixelDisplay-Bold.otf') format('opentype');
+  font-weight: 600;
+}
+
+
+/* Fixel Text */
+@font-face {
+  font-family: 'Fixel Text Regular';
+  src: url('../fonts/FixelText/FixelText-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Fixel Text Medium';
+  src: url('../fonts/FixelText/FixelText-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Fixel Text Bold';
+  src: url('../fonts/FixelText/FixelText-Bold.otf') format('opentype');
+  font-weight: bold;
+}

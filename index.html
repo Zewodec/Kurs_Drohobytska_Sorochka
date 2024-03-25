@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>ДРОГОБИЦЬКА СОРОЧКА ЯКА ПАСУЄ ВСІМ!</title>
+</head>
+<body>
+
+<dialog id="course-registration">
+    <div class="course-registration">
+        <div class="course-registration__title">
+            <h1>ЗАПИС НА КУРС</h1>
+            <h2>ДРОГОБИЦЬКА СОРОЧКА<br>ЯКА ПАСУЄ ВСІМ!</h2>
+        </div>
+        <p class="course-registration__additional-information">
+            Залишіть, будь ласка, ваші контактні дані для зворотнього зв’язку та виберіть формат курсу.
+        </p>
+        <form class="course-registration__form">
+            <div class="course-registration__form__field">
+                <p class="course-registration__form__field__label">Ваше ім’я:</p>
+                <input class="course-registration__form__field__input" required type="text" placeholder="Adam">
+            </div>
+            <div class="course-registration__form__field">
+                <p class="course-registration__form__field__label">Ваш номер телефону (Viber):</p>
+                <input class="course-registration__form__field__input" required type="text" placeholder="+380989558495">
+            </div>
+            <div class="course-registration__form__course-selector">
+                <p>Оберіть формат курсу:</p>
+                <div class="course-registration__form__course-selector__item">
+                    <label for="course-online_online">Онлайн</label>
+                    <input type="radio" id="course-online_online" name="course" value="online" checked>
+
+                </div>
+                <div class="course-registration__form__course-selector__item course-registration__form__course-selector__item_not-selected">
+                    <label for="course-online_lviv">Львів</label>
+                    <input type="radio" id="course-online_lviv" name="course" value="online">
+                </div>
+            </div>
+            <button onclick="openDialog()" class="course-button course-button_alternative-action course-registration__form__submit-button" type="submit">Записатись на курс</button>
+            <button onclick="closeDialog()" class="course-button course-button_main-action course-registration__form__submit-button" type="submit">Закрити вікно</button>
+        </form>
+    </div>
+</dialog>
+
+<div class="nav-bar">
+    <div class="nav-bar__logo">
+        <a href="index.html"><img src="images/Logo.svg" alt="logo"></a>
+    </div>
+    <div class="nav-bar__menu">
+        <ul>
+            <li><a href="#">Про курс</a></li>
+            <li><a href="#">Про автора</a></li>
+            <li><a href="#">Роботи автора</a></li>
+            <li><a href="#">Галерея робіт</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><button onclick="openDialog()" class="nav-bar__menu__button">Записатись на курс</button></li>
+        </ul>
+    </div>
+</div>
+
+<div class="introduction-section">
+    <div class="introduction-section__content">
+        <div class="introduction-section__content__author-image">
+            <img src="images/author.png" alt="author-image">
+        </div>
+        <div class="introduction-section__content__text-container">
+            <div class="introduction-section__content__text-container__main">
+                <h1>ДРОГОБИЦЬКА СОРОЧКА <br><span class="introduction-section__content__text-information_highlight">ЯКА ПАСУЄ ВСІМ!</span>
+                </h1>
+                <p>Бажаєте приєднатися до спільноти володарів сорочки, яка пасує всім? Тоді вам до нас.</p>
+            </div>
+            <button onclick="openDialog()" class="course-button course-button_main-action">Записатись на курс</button>
+        </div>
+    </div>
+</div>
+
+<div class="about-author-course">
+    <h1 class="section-title">ПРО КУРС</h1>
+    <div class="about-author-course__facts-grid">
+        <div class="about-author-course__facts-grid__item">
+            <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
+            <p>Ознайомитись зі схемами Дрогобицької вишивки</p>
+        </div>
+        <div class="about-author-course__facts-grid__item">
+            <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
+            <p>Популяризувати культуру Дрогобицької сорочки</p>
+        </div>
+        <div class="about-author-course__facts-grid__item">
+            <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
+            <p>Опанувати шви притаманні Дрогобицькій сорочці</p>
+        </div>
+        <div class="about-author-course__facts-grid__item">
+            <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
+            <p>Можливість створити ексклюзивну сорочку</p>
+        </div>
+        <div class="about-author-course__facts-grid__item">
+            <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
+            <p>Відтворити і зберегти давні візерунки</p>
+        </div>
+        <div class="about-author-course__facts-grid__item">
+            <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
+            <p>Можливість отримати унікальні знання від авторки курсу</p>
+        </div>
+    </div>
+    <button onclick="openDialog()" class="course-button course-button_main-action">Дізнатись більше</button>
+</div>
+
+<div class="about-author-course">
+    <h1 class="section-title">ПРО АВТОРА</h1>
+    <div class="about-author-course__content">
+        <div class="about-author-course__content__author">
+            <img class="about-author-course__content__author__image" src="images/author_2.png" alt="author-image">
+            <h2 class="about-author-course__content__author__full-name">Іванюш Даніела<br>Юріївна</h2>
+        </div>
+        <div class="about-author-course__content__facts">
+            <p class="about-author-course__content__facts__item">
+                Голова ГО “Дрогобицька школа вишивки ім. Мирослави Кот”
+            </p>
+            <p class="about-author-course__content__facts__item">
+                Членкиня Національної спілки майстрів народного мистецтва України (2001). Майстриня художньої вишивки.
+            </p>
+            <p class="about-author-course__content__facts__item">
+                Володіє різними техніками вишивання (низинка, виколювання, лічил. та двостороння гладь, хрестик,
+                стебнівка);
+            </p>
+            <p class="about-author-course__content__facts__item">
+                Освоїла гуцул. вишивку, притаманну Івано-Франківщині. Серед робіт – серветки, рушники, подушки, доріжки,
+                сорочки.
+            </p>
+            <p class="about-author-course__content__facts__item">
+                Учасниця обласних, всеукраїнських та зарубіжних мистецьких виставок від 1997.
+            </p>
+            <p class="about-author-course__content__facts__item">
+                Мистецтву вишивки навчалась у Мирослави Кот.
+            </p>
+            <p class="about-author-course__content__facts__item">
+                Закінчила ДДПІ ім. І. Я. Франка (Львів. обл., 1997).
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="work-gallery-section">
+    <h1 class="section-title">ГАЛЕРЕЯ РОБІТ</h1>
+    <div class="work-gallery-section__gallery">
+        <img src="images/work_1.png" alt="gallery-image">
+        <img src="images/work_2.png" alt="gallery-image">
+        <img src="images/work_3.png" alt="gallery-image">
+        <img src="images/work_4.png" alt="gallery-image">
+    </div>
+</div>
+
+<div class="responses-section">
+    <h1 class="section-title">ВІДГУКИ</h1>
+    <div class="responses-section__group">
+        <div class="responses-section__group__item">
+            <div class="responses-section__group__item__header">
+                <img class="responses-section__group__item__header__avatar" src="images/responser_1.png"
+                     alt="responser-image">
+                <h3 class="responses-section__group__item__header__full-name">Пані Уляна</h3>
+            </div>
+            <p class="responses-section__group__item__text">
+                Ох і непрості були в мене ці 30 крайніх днів. Радість і біль змінювали одна одну. Творити для когось не
+                могла... <span class="responses-section__group__item__text_read-next">Читати далі...</span>
+            </p>
+        </div>
+
+        <div class="responses-section__group__item">
+            <div class="responses-section__group__item__header">
+                <img class="responses-section__group__item__header__avatar" src="images/responser_2.png"
+                     alt="responser-image">
+                <h3 class="responses-section__group__item__header__full-name">Ткаченко Марина</h3>
+            </div>
+            <p class="responses-section__group__item__text">
+                Ще одна бойківська сорочка « Дрогобицька». На Дрогобиччині сорочки вишивали на сірому полотні, на
+                білому... <span class="responses-section__group__item__text_read-next">Читати далі...</span>
+            </p>
+        </div>
+
+        <div class="responses-section__group__item">
+            <div class="responses-section__group__item__header">
+                <img class="responses-section__group__item__header__avatar" src="images/responser_3.png"
+                     alt="responser-image">
+                <h3 class="responses-section__group__item__header__full-name">Гаврилюк Олександра</h3>
+            </div>
+            <p class="responses-section__group__item__text">
+                Коло повітки на току два Кайдашеві сини, молоді парубки, поправляли поди під стіжки: жнива кінчались.
+            </p>
+        </div>
+    </div>
+    <button onclick="openDialog()" class="course-button course-button_main-action">Записуйтесь на курс вже зараз</button>
+</div>
+
+<div class="blog-section">
+    <h1 class="section-title">БЛОГ</h1>
+    <div class="blog-section__group">
+        <div class="blog-section__group__item">
+            <img class="blog-section__group__item__image" src="images/blog_1.png" alt="blog-image">
+            <p class="blog-section__group__item__text">
+                Бажаєте приєднатися до спільноти володарів сорочки, яка пасує всім? Тоді вам до нас.
+                Набираю групи у м.Львів і онлайн... <span class="blog-section__group__item__text_highlighted">Читати далі...</span>
+            </p>
+        </div>
+
+        <div class="blog-section__group__item">
+            <img class="blog-section__group__item__image" src="images/blog_2.png" alt="blog-image">
+            <p class="blog-section__group__item__text">
+                Під однією горою, коло зеленої левади, в глибокій западині стояла чимала хата Омелька Кайдаша. Хата
+                <span class="blog-section__group__item__text_highlighted">Читати далі...</span>
+            </p>
+        </div>
+
+        <div class="blog-section__group__item">
+            <img class="blog-section__group__item__image" src="images/blog_3.png" alt="blog-image">
+            <p class="blog-section__group__item__text">
+                Коло повітки на току два Кайдашеві сини, молоді парубки, поправляли поди під стіжки: жнива кінчались
+                <span class="blog-section__group__item__text_highlighted">Читати далі...</span>
+            </p>
+        </div>
+    </div>
+    <a href="blog.html" class="course-button course-button_alternative-action">Відкрити блог</a>
+</div>
+
+<div class="footer">
+    <div class="footer__content">
+        <div class="footer__content__logo">
+            <a href="index.html"><img src="images/Logo.svg" alt="logo"></a>
+        </div>
+        <div class="footer__content__menu">
+            <ul>
+                <li class="footer__content__menu__item"><a href="#">Про курс</a></li>
+                <li class="footer__content__menu__item"><a href="#">Про автора</a></li>
+                <li class="footer__content__menu__item"><a href="#">Роботи автора</a></li>
+            </ul>
+            <ul>
+                <li class="footer__content__menu__item"><a href="#">Галерея робіт</a></li>
+                <li class="footer__content__menu__item"><a href="#">Блог</a></li>
+                <li class="footer__content__menu__item"><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    let dialog = document.getElementById('course-registration');
+
+    function openDialog() {
+        dialog.showModal();
+    }
+
+    function closeDialog() {
+        dialog.close();
+    }
+</script>
+</body>
+</html>

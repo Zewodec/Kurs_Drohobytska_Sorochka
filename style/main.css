@@ -1,0 +1,518 @@
+/* Fonts */
+/* Fixel Display */
+@font-face {
+  font-family: "Fixel Display Bold";
+  src: url("../fonts/FixelDisplay/FixelDisplay-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Fixel Display ExtraBold";
+  src: url("../fonts/FixelDisplay/FixelDisplay-Bold.otf") format("opentype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Fixel Display SemiBold";
+  src: url("../fonts/FixelDisplay/FixelDisplay-Bold.otf") format("opentype");
+  font-weight: 600;
+}
+/* Fixel Text */
+@font-face {
+  font-family: "Fixel Text Regular";
+  src: url("../fonts/FixelText/FixelText-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Fixel Text Medium";
+  src: url("../fonts/FixelText/FixelText-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Fixel Text Bold";
+  src: url("../fonts/FixelText/FixelText-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  color: #EFF6EE;
+}
+
+body {
+  background-color: #EFF6EE;
+}
+
+.nav-bar {
+  height: 5rem;
+  background-color: #2E282A;
+  padding-left: 4.25rem;
+  padding-right: 4.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar__logo {
+  height: 3.125rem;
+}
+.nav-bar__menu {
+  font-family: "Fixel Text", serif;
+  font-size: 1rem;
+}
+.nav-bar__menu li {
+  display: inline-block;
+  color: #EFF6EE;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.nav-bar__menu li a {
+  text-decoration: none;
+  color: #EFF6EE;
+}
+.nav-bar__menu li a:hover {
+  text-decoration: underline;
+}
+.nav-bar__menu__button {
+  font-family: "Fixel Text Bold", serif;
+  font-size: 1rem;
+  padding: 12px 18px;
+  background-color: #CA0520;
+  border-radius: 40px;
+}
+.nav-bar__menu__button:hover {
+  background-color: #980418;
+}
+
+.introduction-section {
+  padding: 7.5rem 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+.introduction-section__content {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.introduction-section__content__author-image img {
+  width: 450px;
+  height: 450px;
+}
+.introduction-section__content__text-container {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  color: #2E282A;
+  gap: 3.75rem;
+}
+.introduction-section__content__text-container__main h1 {
+  font-family: "Fixel Display ExtraBold", serif;
+  font-size: 3rem;
+}
+.introduction-section__content__text-container__main p {
+  font-family: "Fixel Text Medium", serif;
+  font-size: 2rem;
+}
+.introduction-section__content__text-information_highlight {
+  color: #CA0520;
+}
+
+.course-button {
+  border-radius: 40px;
+  padding: 1.25rem 2.5rem;
+  font-family: "Fixel Text Bold", serif;
+  font-size: 2.25rem;
+  text-decoration: none;
+  width: max-content;
+}
+.course-button_main-action {
+  background-color: #CA0520;
+  color: #EFF6EE;
+}
+.course-button_main-action:hover {
+  background-color: #980418;
+  color: #EFF6EE;
+}
+.course-button_alternative-action {
+  background-color: #2E282A;
+  color: #EFF6EE;
+  font-size: 2.25rem;
+}
+.course-button_alternative-action:hover {
+  background-color: #131011;
+  color: #EFF6EE;
+  font-size: 2.25rem;
+}
+
+.about-author-course {
+  padding: 7.5rem 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+.about-author-course__title {
+  text-align: center;
+  font-family: "Fixel Display Bold", serif;
+  font-size: 3rem;
+  color: #2E282A;
+}
+.about-author-course__facts-grid {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  gap: 2.5rem 3.75rem;
+}
+.about-author-course__facts-grid__item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 1.5rem;
+}
+.about-author-course__facts-grid__item p {
+  width: 31.875rem;
+  color: #2E282A;
+  font-family: "Fixel Text Regular", serif;
+  font-size: 2rem;
+}
+.about-author-course__facts-grid__item img {
+  width: 75px;
+  height: 75px;
+}
+
+.about-author-course {
+  padding: 7.5rem 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+.about-author-course__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+.about-author-course__content__author {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.about-author-course__content__author__image {
+  height: 610px;
+}
+.about-author-course__content__author__full-name {
+  font-family: "Fixel Display SemiBold", serif;
+  font-size: 2.5rem;
+  color: #2E282A;
+  padding: 0.875rem 1.25rem;
+  border-radius: 16px;
+  border: #2E282A 2px solid;
+  text-align: center;
+}
+.about-author-course__content__facts {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+.about-author-course__content__facts__item {
+  padding: 1.25rem 1.5rem;
+  background-color: #CA0520;
+  border-radius: 16px;
+  font-family: "Fixel Text Medium", serif;
+  font-size: 1.5rem;
+  color: #EFF6EE;
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Fixel Display Bold", serif;
+  font-size: 3rem;
+  color: #2E282A;
+}
+
+.work-gallery-section {
+  padding: 7.5rem 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+.work-gallery-section__gallery {
+  display: flex;
+  gap: 1.875rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.responses-section {
+  padding: 7.5rem 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+.responses-section__group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.125rem;
+}
+.responses-section__group__item {
+  display: flex;
+  width: 25.75rem;
+  padding: 1.875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+  border-radius: 1.25rem;
+  border: 2px solid #2E282A;
+}
+.responses-section__group__item__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9375rem;
+}
+.responses-section__group__item__header__avatar {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.responses-section__group__item__header__full-name {
+  color: #2E282A;
+  text-align: center;
+  font-family: "Fixel Text Medium", serif;
+  font-size: 2rem;
+}
+.responses-section__group__item__text {
+  padding: 0.9375rem;
+  border-radius: 1rem;
+  background: #78866B;
+  color: #EFF6EE;
+  font-family: "Fixel Text", serif;
+  font-size: 1.25rem;
+  letter-spacing: -0.0375rem;
+}
+.responses-section__group__item__text_read-next {
+  color: #2E282A;
+}
+.responses-section__group__item__text_read-next:hover {
+  color: #CA0520;
+}
+
+.blog-section {
+  padding: 7.5rem 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+.blog-section__group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 2rem 2.125rem;
+  flex-wrap: wrap;
+}
+.blog-section__group__item {
+  display: flex;
+  width: 25rem;
+  height: 30.23438rem;
+  padding: 2.5rem 1.875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 2px solid #000;
+}
+.blog-section__group__item__image {
+  align-self: stretch;
+  border-radius: 0.75rem;
+}
+.blog-section__group__item__text {
+  height: 9.375rem;
+  padding: 0.9375rem;
+  border-radius: 1rem;
+  background: rgba(255, 134, 0, 0.18);
+  color: #2E282A;
+  font-family: "Fixel Text Regular", serif;
+  font-size: 1.25rem;
+  letter-spacing: -0.0375rem;
+}
+.blog-section__group__item__text_highlighted {
+  color: #CA0520;
+}
+.blog-section__group__item__text_highlighted:hover {
+  color: #78866B;
+}
+
+.footer {
+  height: 11.25rem;
+  padding: 0 4.25rem;
+  background-color: #2E282A;
+}
+.footer__content {
+  display: inline-flex;
+  width: 100%;
+  height: 11.25rem;
+  padding: 0 4.25rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.footer__content__logo {
+  height: 3rem;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.footer__content__logo:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.footer__content__menu {
+  display: flex;
+  padding-right: 2.1875rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4.4375rem;
+}
+.footer__content__menu__item {
+  display: block;
+}
+.footer__content__menu__item a {
+  opacity: 0.6;
+  text-decoration: none;
+  color: #EFF6EE;
+  font-family: "Fixel Text", serif;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.footer__content__menu__item a:hover {
+  opacity: 1;
+}
+
+.info-section {
+  padding: 7.5rem 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+.info-section__container {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #2E282A;
+  gap: 0.85rem;
+  text-align: center;
+}
+.info-section__container__title {
+  font-family: "Fixel Display ExtraBold", serif;
+  font-size: 3rem;
+}
+.info-section__container__title_highlight {
+  color: #CA0520;
+}
+.info-section__container__text {
+  font-family: "Fixel Text Medium", serif;
+  font-size: 2rem;
+}
+
+#course-registration {
+  border: none;
+  background: none;
+  width: 51.3rem;
+  height: 70.3rem;
+  box-sizing: border-box;
+}
+
+#course-registration::backdrop {
+  background-color: black;
+  opacity: 60%;
+}
+
+.course-registration {
+  display: flex;
+  padding: 4.375rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 1.25rem;
+  background: #CA0520;
+  color: #EFF6EE;
+  font-family: "Fixel Text Medium", serif;
+  font-size: 2rem;
+}
+.course-registration__title h1 {
+  text-align: center;
+  font-family: "Fixel Display ExtraBold", serif;
+  font-size: 4rem;
+}
+.course-registration__title h2 {
+  text-align: center;
+  font-family: "Fixel Display ExtraBold", serif;
+  font-size: 2.5rem;
+}
+.course-registration__additional-information {
+  font-size: 2rem;
+}
+.course-registration__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+  align-self: stretch;
+}
+.course-registration__form__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.375rem;
+  align-self: stretch;
+}
+.course-registration__form__field__input {
+  width: 100%;
+  padding: 1rem 1.875rem;
+  border-radius: 1.25rem;
+  background: #EFF6EE;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+  color: #2E282A;
+  font-family: "Fixel Text Regular", serif;
+  font-size: 2rem;
+}
+.course-registration__form__course-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+.course-registration__form__course-selector__item {
+  display: flex;
+  padding: 1.875rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 1.25rem;
+  border: 4px solid #EFF6EE;
+}
+.course-registration__form__course-selector__item_not-selected {
+  opacity: 0.6;
+}
+.course-registration__form__submit-button {
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
