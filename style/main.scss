@@ -563,6 +563,10 @@ body {
 
     &__submit-button {
       border: none;
+      &_close{
+        padding: 1.2rem;
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -514,5 +514,9 @@ body {
 .course-registration__form__submit-button {
   border: none;
 }
+.course-registration__form__submit-button_close {
+  padding: 1.2rem;
+  font-size: 1rem;
+}
 
 /*# sourceMappingURL=main.css.map */
