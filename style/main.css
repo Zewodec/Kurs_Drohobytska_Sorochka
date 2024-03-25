@@ -216,7 +216,7 @@ body {
   text-align: center;
 }
 .about-author-course__content__facts {
-  width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -263,7 +263,9 @@ body {
 .responses-section__group {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
   gap: 2.125rem;
 }
 .responses-section__group__item {
