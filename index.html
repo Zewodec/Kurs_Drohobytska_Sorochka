@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/main.css">
-    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ДРОГОБИЦЬКА СОРОЧКА ЯКА ПАСУЄ ВСІМ!</title>
 </head>
 <body>
@@ -44,7 +44,12 @@
     </div>
 </dialog>
 
-<div class="nav-bar">
+<nav class="nav-bar">
+    <div class="nav-bar__tablet">
+        <img src="images/menu_icon.svg" alt="menu">
+        <a href="index.html"><img src="images/Logo.svg" alt="logo"></a>
+        <button onclick="openDialog()" class="nav-bar__menu__button">Записатись на курс</button>
+    </div>
     <div class="nav-bar__logo">
         <a href="index.html"><img src="images/Logo.svg" alt="logo"></a>
     </div>
@@ -58,7 +63,7 @@
             <li><button onclick="openDialog()" class="nav-bar__menu__button">Записатись на курс</button></li>
         </ul>
     </div>
-</div>
+</nav>
 
 <div class="introduction-section">
     <div class="introduction-section__content">
@@ -71,35 +76,37 @@
                 </h1>
                 <p>Бажаєте приєднатися до спільноти володарів сорочки, яка пасує всім? Тоді вам до нас.</p>
             </div>
-            <button onclick="openDialog()" class="course-button course-button_main-action">Записатись на курс</button>
+            <div>
+                <button onclick="openDialog()" class="course-button course-button_main-action">Записатись на курс</button>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="about-author-course">
+<div class="about-course">
     <h1 class="section-title">ПРО КУРС</h1>
-    <div class="about-author-course__facts-grid">
-        <div class="about-author-course__facts-grid__item">
+    <div class="about-course__facts-grid">
+        <div class="about-course__facts-grid__item">
             <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
             <p>Ознайомитись зі схемами Дрогобицької вишивки</p>
         </div>
-        <div class="about-author-course__facts-grid__item">
+        <div class="about-course__facts-grid__item">
             <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
             <p>Популяризувати культуру Дрогобицької сорочки</p>
         </div>
-        <div class="about-author-course__facts-grid__item">
+        <div class="about-course__facts-grid__item">
             <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
             <p>Опанувати шви притаманні Дрогобицькій сорочці</p>
         </div>
-        <div class="about-author-course__facts-grid__item">
+        <div class="about-course__facts-grid__item">
             <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
             <p>Можливість створити ексклюзивну сорочку</p>
         </div>
-        <div class="about-author-course__facts-grid__item">
+        <div class="about-course__facts-grid__item">
             <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
             <p>Відтворити і зберегти давні візерунки</p>
         </div>
-        <div class="about-author-course__facts-grid__item">
+        <div class="about-course__facts-grid__item">
             <img src="images/vyshyvka_icon.svg" alt="vyshyvka-icon">
             <p>Можливість отримати унікальні знання від авторки курсу</p>
         </div>
@@ -112,7 +119,7 @@
     <div class="about-author-course__content">
         <div class="about-author-course__content__author">
             <img class="about-author-course__content__author__image" src="images/author_2.png" alt="author-image">
-            <h2 class="about-author-course__content__author__full-name">Іванюш Даніела<br>Юріївна</h2>
+            <h2 class="about-author-course__content__author__full-name">Іванюш Даніела Юріївна</h2>
         </div>
         <div class="about-author-course__content__facts">
             <p class="about-author-course__content__facts__item">
