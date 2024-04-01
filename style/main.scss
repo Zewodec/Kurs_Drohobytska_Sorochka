@@ -733,7 +733,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1.875rem;
-        width: 36.56rem;
+        width: initial;
       }
 
       &__author__image {
@@ -794,10 +794,12 @@ body {
     padding: 0 $main_content_margin_left_right;
 
     &__content {
-      padding: 0 4.25rem;
+      //padding: 0 4.25rem;
+      padding: 0;
 
       &__menu {
         gap: 4.12rem;
+        padding-right: initial;
 
         &__item a {
           font-size: 0.875rem;
@@ -808,7 +810,7 @@ body {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
   $main_content_margin_left_right: 0.938rem;
 
   @mixin section {

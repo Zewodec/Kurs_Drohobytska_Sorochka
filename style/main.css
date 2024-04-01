@@ -646,7 +646,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.875rem;
-    width: 36.56rem;
+    width: initial;
   }
   .about-author-course__content__author__image {
     width: 21.125rem;
@@ -702,17 +702,18 @@ body {
     padding: 0 4.063rem;
   }
   .footer__content {
-    padding: 0 4.25rem;
+    padding: 0;
   }
   .footer__content__menu {
     gap: 4.12rem;
+    padding-right: initial;
   }
   .footer__content__menu__item a {
     font-size: 0.875rem;
     line-height: 1.75rem;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 500px) {
   .nav-bar {
     height: 5rem;
     padding-left: 0.938rem;
