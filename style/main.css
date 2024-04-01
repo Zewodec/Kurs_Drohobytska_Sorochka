@@ -813,7 +813,7 @@ body {
     width: initial;
   }
   .about-author-course__content__author__image {
-    height: 453px;
+    width: 100%;
   }
   .about-author-course__content__author__full-name {
     font-size: 1.5rem;
@@ -843,7 +843,7 @@ body {
     flex-wrap: nowrap;
   }
   .work-gallery-section__gallery img {
-    height: 14.25rem;
+    width: 100%;
   }
   .responses-section {
     padding: 4.375rem 0.938rem;
