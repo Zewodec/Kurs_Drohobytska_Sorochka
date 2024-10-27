@@ -7,12 +7,12 @@
 }
 @font-face {
   font-family: "Fixel Display ExtraBold";
-  src: url("../fonts/FixelDisplay/FixelDisplay-Bold.otf") format("opentype");
+  src: url("../fonts/FixelDisplay/FixelDisplay-ExtraBold.otf") format("opentype");
   font-weight: 800;
 }
 @font-face {
   font-family: "Fixel Display SemiBold";
-  src: url("../fonts/FixelDisplay/FixelDisplay-Bold.otf") format("opentype");
+  src: url("../fonts/FixelDisplay/FixelDisplay-SemiBold.otf") format("opentype");
   font-weight: 600;
 }
 /* Fixel Text */
@@ -718,13 +718,15 @@ body {
     height: 5rem;
     padding-left: 0.938rem;
     padding-right: 0.938rem;
-    flex-direction: row-reverse;
   }
   .nav-bar__tablet button {
     display: none;
   }
   .nav-bar__logo {
     height: 2.19rem;
+  }
+  .nav-bar__tablet {
+    flex-direction: row-reverse;
   }
   .nav-bar__tablet img {
     height: 2.19rem;
@@ -786,6 +788,7 @@ body {
     gap: 1.5rem;
   }
   .about-course__facts-grid__item p {
+    font-family: "Fixel Text Medium", serif;
     width: initial;
     font-size: 1rem;
   }
@@ -814,6 +817,7 @@ body {
   }
   .about-author-course__content__author__image {
     width: 100%;
+    height: initial;
   }
   .about-author-course__content__author__full-name {
     font-size: 1.5rem;

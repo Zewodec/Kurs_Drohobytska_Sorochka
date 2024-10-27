@@ -828,7 +828,7 @@ body {
     height: 5rem;
     padding-left: $main_content_margin_left_right;
     padding-right: $main_content_margin_left_right;
-    flex-direction: row-reverse;
+
 
     &__tablet button{
       display: none;
@@ -836,6 +836,10 @@ body {
 
     &__logo {
       height: 2.19rem;
+    }
+
+    &__tablet{
+      flex-direction: row-reverse;
     }
 
     &__tablet img{
@@ -908,6 +912,7 @@ body {
       }
 
       &__item p {
+        font-family: "Fixel Text Medium", serif;
         width: initial;
         font-size: 1rem;
       }
@@ -938,6 +943,7 @@ body {
 
       &__author__image {
         width: 100%;
+        height: initial;
       }
 
       &__author__full-name {
